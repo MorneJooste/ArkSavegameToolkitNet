@@ -10,13 +10,13 @@ namespace ArkSavegameToolkitNet.TestConsoleApp
     {
         static void Main(string[] args)
         {
-            var savePath = @"C:\save\TheIsland.ark";
-            var clusterPath = @"C:\save\cluster";
+            var savePath = @"C:\AS\EbenusAstrum.ark";
+        
             var domainOnly = true; //true: optimize loading of the domain model, false: load everything and keep references in memory
 
             //prepare
-            var cd = new ArkClusterData(clusterPath, loadOnlyPropertiesInDomain: domainOnly);
-            var gd = new ArkGameData(savePath, cd, loadOnlyPropertiesInDomain: domainOnly);
+           
+            var gd = new ArkGameData(savePath);
 
             var st = Stopwatch.StartNew();
             //extract savegame
@@ -24,9 +24,6 @@ namespace ArkSavegameToolkitNet.TestConsoleApp
             {
                 Console.WriteLine($@"Elapsed (gd) {st.ElapsedMilliseconds:N0} ms");
                 st = Stopwatch.StartNew();
-
-                //extract cluster data
-                var clusterResult = cd.Update(CancellationToken.None);
 
                 Console.WriteLine($@"Elapsed (cd) {st.ElapsedMilliseconds:N0} ms");
                 st = Stopwatch.StartNew();
