@@ -8,9 +8,15 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ARK Savegame Toolkit .NET")]
 [assembly: AssemblyDescription("Library for reading ARK Survival Evolved savegame files using .NET.")]
 [assembly: AssemblyConfiguration("")]
+<<<<<<< HEAD
 [assembly: AssemblyCompany("Morne Jooste")]
 [assembly: AssemblyProduct("ArkSaveGameToolkitNet")]
 [assembly: AssemblyCopyright("Copyright © 2019")]
+=======
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ArkSavegameToolkitNet")]
+[assembly: AssemblyCopyright("Copyright © 2020")]
+>>>>>>> upstream/master
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,7 +39,12 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
+<<<<<<< HEAD
 [assembly: AssemblyVersion("1.9.0.5")]
 [assembly: AssemblyFileVersion("1.9.0.5")]
+=======
+[assembly: AssemblyVersion("1.9.2.1")]
+[assembly: AssemblyFileVersion("1.9.2.1")]
+>>>>>>> upstream/master
 
 [assembly: InternalsVisibleTo("ArkSavegameToolkitNet.Domain")]
